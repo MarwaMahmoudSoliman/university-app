@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>projrct</title>
+    <meta name="this is project">
+    <link rel="stylesheet" href="test.css">
+</head>
+
+<body>
+    <script>
+        function fun() {
+            var username = Array("Mo3az", "Ali", "Fares", "Ahmed"),
+                userpass = Array("1111", "2222", "3333", "4444")
+                check_valid = true;
+
+            for (var i = 0; i < username.length; i++) {
+                if (username[i] == document.getElementById('user_username').value &&
+                    userpass[i] == document.getElementById('user_password').value) {
+                    check_valid = true;
+                    break;
+                }
+                else
+                    check_valid = false;
+            }
+
+            if (check_valid == true) {
+                alert("valid account");
+                window.open("file:///C:/Users/H2/Desktop/project/web/viduo.html");
+            }
+            else
+                alert("not valid");
+        }
+    </script>
+    <div class="a">
+
+
+        <form>
+            <h2> <em>تسجيل الدخول</em></h2>
+            <input type="text" placeholder=" user name" id="user_username">
+
+            <input type="password" class="pk" placeholder="Enter password" id="user_password">
+
+            <input type="button" value="login" onclick="fun()">
+
+        </form>
+
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+</html>
